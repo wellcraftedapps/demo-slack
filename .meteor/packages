@@ -10,7 +10,6 @@ jquery
 dburles:factory
 accounts-base
 accounts-password
-accounts-ui
-accounts-facebook
+ian:accounts-ui-bootstrap-3
 twbs:bootstrap
 
