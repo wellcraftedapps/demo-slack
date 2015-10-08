@@ -9,7 +9,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -81,6 +81,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  padding-bottom: 64px;
 }
 
 /* line 23, ../tests/sass/_layout.scss */
@@ -368,4 +369,7 @@ li a{
 }
 #login-dropdown-list a{
   color:#ab9ba9 !important;
+}
+.col-lg-12{
+  height: 100%;
 }

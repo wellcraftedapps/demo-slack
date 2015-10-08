@@ -41,12 +41,14 @@
 
 #page-content-wrapper {
     width: 100%;
-    position: absolute;
     padding: 15px;
 }
 
+#wrapper.toggled #page-content-wrapper .footer .inputbox {
+    margin-left: 220px;
+}
+
 #wrapper.toggled #page-content-wrapper {
-    position: absolute;
     margin-right: -220px;
 }
 
@@ -124,4 +126,12 @@
         position: relative;
         margin-right: 0;
     }
+
+    @media (max-width: 1200px) {
+        .footer {
+            bottom: -57px !important;
+        }
+    }
+
 }
+
