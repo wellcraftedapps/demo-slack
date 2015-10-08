@@ -6,9 +6,11 @@
 
 meteor-platform
 anti:fake
+jquery
 dburles:factory
 accounts-base
 accounts-password
 accounts-ui
 accounts-facebook
+twbs:bootstrap
 

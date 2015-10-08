@@ -1,14 +1,46 @@
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	{{> header}}
-	<div class="main">
-		{{> listings}}
-		{{> messages}}
-	</div>
-	{{> footer}}
+
+<div id="wrapper">
+
+    {{> listings}}
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main">
+                        <div class="channel-menu">
+			<span class="channel-menu_name">
+                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+				<span class="channel-menu_prefix">#</span>
+				slack
+			</span>
+                        </div>
+                        {{> messages}}
+                        {{> footer}}
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+
+
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
 </body>

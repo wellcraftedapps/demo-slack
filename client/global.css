@@ -81,8 +81,6 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding-top: 53px;
-  padding-bottom: 64px;
 }
 
 /* line 23, ../tests/sass/_layout.scss */
@@ -97,6 +95,7 @@ body {
 /* line 31, ../tests/sass/_layout.scss */
 .main {
   height: 100%;
+  margin-bottom: 70px;
 }
 
 /* line 35, ../tests/sass/_layout.scss */
@@ -154,7 +153,6 @@ body {
 
 /* line 11, ../tests/sass/components/_main.scss */
 .message-history {
-  margin-left: 220px;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
@@ -292,15 +290,12 @@ body {
 
 /* line 4, ../tests/sass/components/_user-menu.scss */
 .user-menu {
-  float: left;
   width: 220px;
   height: 100%;
   cursor: pointer;
   background: #3e313c;
   border-top: 2px solid #372c36;
-  padding: 7px 0 9px 8px;
   height: 4rem;
-  position: fixed;
   bottom: 0;
   left: 0;
 }
@@ -343,7 +338,6 @@ body {
 /* line 1, ../tests/sass/components/_input-box.scss */
 .input-box {
   height: 100%;
-  margin-left: 220px;
 }
 
 /* line 6, ../tests/sass/components/_input-box.scss */
@@ -357,7 +351,6 @@ body {
   -moz-border-radius: 0.2rem;
   -webkit-border-radius: 0.2rem;
   border-radius: 0.2rem;
-  -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: #3d3c40;
@@ -369,4 +362,7 @@ body {
   bottom: 0;
   min-height: 41px !important;
   padding: 9px 5px 9px 8px;
+}
+li a{
+  color: #fff;
 }
